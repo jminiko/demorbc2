@@ -1,0 +1,10 @@
+show databases;
+use robotstore;	
+create database robotstore;
+grant all on robotstore.* to 'admin'@'localhost';
+INSERT INTO `robotstore`.`category` (`category_id`, `name`) VALUES ('1', 'cat1');
+INSERT INTO `robotstore`.`category` (`category_id`, `name`) VALUES ('2', 'cat2');
+INSERT INTO `robotstore`.`category` (`category_id`, `name`) VALUES ('5', 'cat3');
+INSERT INTO `robotstore`.`robot` (`name`, `category_id`) VALUES ('mon robot#1', '2');
+INSERT INTO `robotstore`.`robot` (`name`, `category_id`) VALUES ('mon robot#2', '2');
+INSERT INTO `robotstore`.`robot` (`name`, `category_id`) VALUES ('mon robot#3', '5');
